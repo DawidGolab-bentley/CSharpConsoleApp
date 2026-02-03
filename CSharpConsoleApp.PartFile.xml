@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BuildPartFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:noNamespaceSchemaLocation="../../BentleyBuild/PartFile.xsd">
+
+  <Part Name="CSharpConsoleApp" ProjectFile="ConsoleApp1.csproj">
+    
+    <RequiredRepository Name="BentleyBuild" />
+    
+    <ProductDirectoryList>
+      <ProductDirectory Path="$(OutputRootDir)build/$(BuildContext)/Delivery"
+                        SourceName="Delivery" />
+    </ProductDirectoryList>
+    
+  </Part>
+
+</BuildPartFile>

@@ -1,0 +1,32 @@
+{
+  "Bootstrap": [
+    {
+      "IsPrimary": true,
+      "Name": "CSharpConsoleApp",
+      "RepoType": "git",
+      "LocalDir": "CSharpConsoleApp"
+    },
+    {
+      "IsPrimary": false,
+      "Name": "BentleyBuild",
+      "RepoType": "Git",
+      "LocalDir": "BentleyBuild"
+    },
+    {
+      "IsPrimary": false,
+      "Name": "BuildStrategies",
+      "RepoType": "Git",
+      "LocalDir": "BuildStrategies"
+    }
+  ],
+  "GitRepositories": [
+    {
+      "Name": "CSharpConsoleApp",
+      "Url": "https://github.com/DawidGolab-bentley/CSharpConsoleApp.git",
+      "Branch": "main",
+      "UseBranch": true,
+      "FromLkgs": false,
+      "Guid": ""
+    }
+  ]
+}

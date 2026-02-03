@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BuildStrategy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:noNamespaceSchemaLocation="../BentleyBuild/BuildStrategy.xsd"
+               DefaultRepository="CSharpConsoleApp"
+               DefaultPartFile="CSharpConsoleApp.PartFile.xml"
+               DefaultPartName="CSharpConsoleApp">
+
+    <ImportStrategy Name="Base" />
+    
+    <LocalRepositories>
+        <GitRepository Name="CSharpConsoleApp" LocalDir="CSharpConsoleApp" />
+        <GitRepository Name="BentleyBuild" LocalDir="BentleyBuild" />
+        <GitRepository Name="BuildStrategies" LocalDir="BuildStrategies" />
+    </LocalRepositories>
+
+    <RemoteRepositories>
+        <GitRepository Name="CSharpConsoleApp" 
+                       Url="https://github.com/DawidGolab-bentley/CSharpConsoleApp.git" 
+                       Branch="main" />
+    </RemoteRepositories>
+
+    <DefaultToolset Platform="x86" Toolset="VS2017" ToolVersion="14.16"/>
+    <DefaultToolset Platform="x64" Toolset="VS2017" ToolVersion="14.16"/>
+    
+</BuildStrategy>
